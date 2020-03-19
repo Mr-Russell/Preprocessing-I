@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Muli&display=swap" rel="stylesheet"> 
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
@@ -15,11 +16,13 @@
 
 <body>
 
+<div class="big-container">
+
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+    <a href="#brag-text">About</a>
+    <a href="https://mr-russell.github.io/portfolio-website/Template/">Portfolio</a>
+    <a href="mailto:brian_russell@hotmail.com">Contact</a>
   </nav>
 
   <header>
@@ -28,6 +31,10 @@
     <div class="title-text">
       <h1>Brian Russell - Web Developer</h1>
       <h5>Current Student at Lambda School - Web30</h5>
+      <br />
+      <h5>My Contact Info:</h5>
+      <h5><strong>Email:</strong> brian_russell@hotmail.com</h5>
+      <h5><strong>Phone:</strong> (843) 449 - 1020</h5>
     </div>
 
 
@@ -38,7 +45,7 @@
     <div id="brag-text">
       <h3>Let Me Introduce Myself</h3>
 
-      <p>Hello! My name is Brian Russell. I used to work in Film production, but I the work was gruling, and the demands were extremely high. It was definitely great work experience. A 12 hour day does not intimidate me at all anymore, and if I can work less than 7 days a week, that is a blessing. I am no stranger to hard work. I am also very familir with top level Professional environments at companies like Disney and Sony. I am an employee who knows how to be professional, and I can withstand any difficulty I face</p>
+      <p>I used to work in Film production, but I the work was gruling, and the demands were extremely high. It was definitely great work experience. A 12 hour day does not intimidate me at all anymore, and if I can work less than 7 days a week, that is a blessing. I am no stranger to hard work. I am also very familir with top level Professional environments at companies like Disney and Sony. I am an employee who knows how to be professional, and I can withstand any difficulty I face</p>
     </div>  
 
     <div id="skill-list">
@@ -57,50 +64,64 @@
 
   <section id="experience">
 
-    <div id="LK">
-      <p>April 2017 - July 2019</p>
-      <h4>Lion King (2019)</h4>
-      <p>Post Production Assistant</p>
-      <p>Office Administration</p>
+    <h3>My Work History</h3>
+
+    <div class="film" id="top-row">
+      <p class="date">Dates</p>
+      <h4 class="title">Company</h4>
+      <p class="job">Job Title</p>
+      <p class="description">Job Description</p>
     </div>
 
-    <div id="POTC">
-      <p>July 2016 - April 2017</p>
-      <h4>Pirates of the Caribbean: Dead Men Tell No Tales</h4>
-      <p>VFX Production Assistant</p>
-      <p>Office Administration</p>
+    <div class="film clean" id="LK">
+      <p class="date">Apr 2017 - Jul 2019</p>
+      <h4 class="title">Lion King (2019)</h4>
+      <p class="job">Post Production Assistant</p>
+      <p class="description">Office Administration</p>
     </div>
 
-    <div id="Alice">
-      <p>April 2016 - May 2016</p>
-      <h4>Alice: Through The Looking Glass</h4>
-      <p>Post Production Assistant</p>
-      <p>Office Administration</p>
+    <div class="film shade" id="POTC">
+      <p class="date">Jul 2016 - Apr 2017</p>
+      <h4 class="title">Pirates of the Caribbean: Dead Men Tell No Tales</h4>
+      <p class="job">VFX Production Assistant</p>
+      <p class="description">Office Administration</p>
     </div>
 
-    <div id="JB">
-      <p>June 2014 - April 2016</p>
-      <h4>The Jungle Book (2016)</h4>
-      <p>Post Production Assistant</p>
-      <p>Office Administration</p>
+    <div class="film clean" id="Alice">
+      <p class="date">Apr 2016 - May 2016</p>
+      <h4 class="title">Alice: Through The Looking Glass</h4>
+      <p class="job">Post Production Assistant</p>
+      <p class="description">Office Administration</p>
     </div>
 
-    <div id="Atlas">
-      <p>December 2013 - February 2014</p>
-      <h4>Atlas Shrugged: Who is John Galt</h4>
-      <p>Office Production Assistant</p>
-      <p>Office Administration</p>
+    <div class="film shade" id="JB">
+      <p class="date">Jun 2014 - Apr 2016</p>
+      <h4 class="title">The Jungle Book (2016)</h4>
+      <p class="job">Post Production Assistant</p>
+      <p class="description">Office Administration</p>
     </div>
 
-    <div id="her">
-      <p>May 2012 - June 2012</p>
-      <h4>her</h4>
-      <p>Set Production Assistant</p>
-      <p>On Set Laborer</p>
+    <div class="film clean" id="Atlas">
+      <p class="date">Dec 2013 - Feb 2014</p>
+      <h4 class="title">Atlas Shrugged: Who is John Galt</h4>
+      <p class="job">Office Production Assistant</p>
+      <p class="description">Office Administration</p>
+    </div>
+
+    <div class="film shade" id="her">
+      <p class="date">May 2012 - Jun 2012</p>
+      <h4 class="title">her</h4>
+      <p class="job">Set Production Assistant</p>
+      <p class="description">On Set Laborer</p>
     </div>
 
   </section>
 
+  <footer>
+    <h6>Copyright Brian Russell - March 2020</h6>
+  </footer>
   
+</div>
+
 </body>
 </html>

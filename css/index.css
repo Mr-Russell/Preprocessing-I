@@ -134,3 +134,218 @@ html,
 body {
   height: 100%;
 }
+.big-container {
+  border: 3% solid white;
+}
+.big-container h3 {
+  font-size: 1.7rem;
+  font-family: 'Muli', sans-serif;
+}
+.big-container nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .big-container nav {
+    justify-content: space-around;
+  }
+}
+.big-container nav a {
+  margin: 0 2%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Abel', sans-serif;
+}
+.big-container header {
+  background-color: #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 2%;
+  align-items: space-between;
+}
+.big-container header img {
+  max-width: 18%;
+}
+.big-container header h1 {
+  font-size: 2.5rem;
+  margin: 1.5% 0 0.25%;
+  font-family: 'Muli', sans-serif;
+}
+@media (max-width: 500px) {
+  .big-container header h1 {
+    font-size: 2.03rem;
+  }
+}
+.big-container header h5 {
+  font-size: 1.15rem;
+  font-family: 'Muli', sans-serif;
+  margin: 1% 0;
+}
+.big-container header h5 strong {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.big-container #bragging {
+  display: flex;
+  margin: 2%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .big-container #bragging {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.big-container #bragging #brag-text {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .big-container #bragging #brag-text {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+.big-container #bragging #brag-text p {
+  margin: 1.5% 0;
+  line-height: 140%;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
+}
+.big-container #bragging #skill-list {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .big-container #bragging #skill-list {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
+.big-container #bragging #skill-list h3 {
+  padding: 2%;
+  font-family: 'Muli', sans-serif;
+}
+.big-container #bragging #skill-list ul {
+  border: 1px solid gray;
+}
+.big-container #bragging #skill-list ul li {
+  margin: 3% 0;
+  border-bottom: 1px solid gray;
+  padding: 0 3% 3% 2%;
+  font-family: 'Abel', sans-serif;
+}
+.big-container #bragging #skill-list ul li:last-child {
+  border-bottom: none;
+}
+.big-container #experience {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .big-container #experience {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 500px) {
+  .big-container #experience h3 {
+    padding: 2%;
+  }
+}
+.big-container #experience #top-row {
+  border-bottom: 5px solid black;
+  padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .big-container #experience #top-row {
+    display: none;
+  }
+}
+.big-container #experience #top-row p {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+}
+.big-container #experience #top-row h4 {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.big-container #experience .shade {
+  background-color: #C0C0C0;
+}
+.big-container #experience .film {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .big-container #experience .film {
+    flex-direction: column;
+    padding: 5% 2%;
+  }
+}
+.big-container #experience .film p {
+  font-family: 'Muli', sans-serif;
+}
+.big-container #experience .film h4 {
+  font-family: 'Muli', sans-serif;
+}
+.big-container #experience .film .date {
+  width: 15%;
+}
+@media (max-width: 500px) {
+  .big-container #experience .film .date {
+    width: 100%;
+    margin: 1.5% 0;
+  }
+}
+.big-container #experience .film .title {
+  width: 35%;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .big-container #experience .film .title {
+    width: 100%;
+    margin: 1.5% 0;
+  }
+}
+.big-container #experience .film .job {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .big-container #experience .film .job {
+    width: 100%;
+    margin: 1.5% 0;
+  }
+}
+.big-container #experience .film .description {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .big-container #experience .film .description {
+    width: 100%;
+    display: inline;
+    margin: 1.5% 0;
+  }
+}
+.big-container footer {
+  text-align: center;
+  color: white;
+  background-color: #808080;
+  padding: 4%;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .big-container footer {
+    margin-top: 5%;
+  }
+}
+.big-container footer h6 {
+  font-family: 'Abel', sans-serif;
+}
