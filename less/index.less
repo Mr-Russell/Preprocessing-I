@@ -57,3 +57,264 @@ html, body {
     height: 100%;
 }
 
+
+
+
+
+
+
+// ========== MY CODE STARTS HERE ============ 
+
+
+// ================ VARIABLES ===============
+
+@headerColor: #D3D3D3;
+
+@expColor: #C0C0C0;
+
+@footerColor: #808080;
+
+
+
+// ================ MIXINS ==================
+
+.flexColumn() {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexRight(){
+	display:flex;
+	justify-content: flex-end;
+}
+
+
+
+// =============== HEADER ===================
+
+.big-container {
+	border: 3% solid white;
+
+		h3{
+			font-size: 1.7rem;
+			font-family: 'Muli', sans-serif;
+		}
+
+		nav {
+			.flexRight();
+			// width: 30%;
+			margin-top: 2%;
+
+			@media (max-width:500px) {
+				justify-content:space-around;
+			}
+
+				a {
+					margin: 0 2%;
+					font-size: 1.3rem; 
+					text-decoration: none;
+					color: black;
+					font-family: 'Abel', sans-serif;
+				}// Closes <a> in nav
+		}// Closes nav
+
+		header {
+			background-color: @headerColor;
+			.flexColumn();
+			padding: 2%;
+			margin: 2%;
+			align-items: space-between;
+
+				img {
+					max-width: 18%;
+				}// Closes header image
+
+				h1{
+					font-size: 2.5rem;
+					margin: 1.5% 0 .25%;
+					font-family: 'Muli', sans-serif;
+
+					@media (max-width:500px){
+						font-size: 2.03rem
+					}
+				}// Closes h1
+
+				h5 {
+					font-size: 1.15rem;
+					font-family: 'Muli', sans-serif;
+					margin: 1% 0;
+
+						strong {
+							font-weight: bold;
+							text-decoration: underline;
+						}
+				}// Closes h5 in header
+		}// Closes header
+
+		#bragging {
+			display: flex;
+			margin: 2%;
+			justify-content: space-between;
+
+			@media (max-width:500px) {
+				.flexColumn();
+			}
+
+				#brag-text{
+					width: 48%;
+
+					@media (max-width:500px){
+						width:100%;
+						margin: 2% 0;
+					}
+
+
+						p {
+							margin: 1.5% 0;
+							line-height: 140%;
+							font-family: 'Abel', sans-serif;
+							font-size: 1.2rem;
+						}
+				}
+
+				#skill-list {
+					width: 30%;
+					// padding: 1%;
+
+					@media (max-width:500px) {
+						width: 100%;
+						margin: 5% 0;
+					}
+
+						h3 {
+							padding: 2%;
+							font-family: 'Muli', sans-serif;	
+						}
+
+						ul{ 
+
+							border: 1px solid gray;
+								li {
+									margin: 3% 0;
+									border-bottom: 1px solid gray;
+									padding: 0 3% 3% 2%;
+									font-family: 'Abel', sans-serif;
+								}
+		
+								li:last-child {
+									border-bottom: none;
+								}
+							} 
+				}	
+		}// Closes #bragging
+
+		#experience {
+			.flexColumn();
+			margin: 2%;
+			@media (max-width:500px) {
+				margin: 3% 0;
+			}
+
+			h3{
+				@media (max-width: 500px) {
+					padding:2%;
+				}
+			}
+
+			#top-row {
+				border-bottom: 5px solid black;
+				padding-bottom: 1%;
+				@media (max-width:500px) {
+					display: none;
+				}
+
+				p {
+					font-family: 'Muli', sans-serif;
+					font-size: 1.5rem;
+				}
+
+				h4 {
+					font-family: 'Muli', sans-serif;
+					font-size: 1.5rem;
+					font-weight: bold;
+				}
+			}
+
+			.shade {
+				background-color: @expColor;
+			}
+
+			.film {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				padding: 1%;
+
+				@media (max-width:500px) {
+					flex-direction: column;
+					padding: 5% 2%;
+				}
+
+					p {
+						font-family: 'Muli', sans-serif;
+					}
+
+					h4 {
+						font-family: 'Muli', sans-serif;
+					}
+
+					.date {
+						width: 15%;
+						@media (max-width:500px) {
+							width:100%;
+							margin: 1.5% 0;
+						}
+					}
+
+					.title {
+						width: 35%;
+						font-weight: bold;
+						font-size: 1.2rem;
+						@media (max-width:500px) {
+							width:100%;
+							margin: 1.5% 0;
+						}
+					}
+
+					.job {
+						width: 20%;
+						@media (max-width:500px) {
+							width:100%;
+							margin: 1.5% 0;
+						}
+					}
+
+					.description{
+						.flexRight();
+						width: 20%;
+						@media (max-width:500px) {
+							width:100%;
+							display: inline;
+							margin: 1.5% 0;
+						}
+					}
+			}// Closes .film
+
+		}// Closes #experience
+
+		footer {
+			text-align: center;
+			color: white;
+			background-color:@footerColor;
+			padding: 4%;
+			margin: 2%;
+
+			@media (max-width:500px) {
+				margin-top: 5%;
+			}
+
+				h6{
+					font-family: 'Abel', sans-serif;
+				}
+		}
+}// Closes body
